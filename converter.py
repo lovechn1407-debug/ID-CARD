@@ -241,8 +241,23 @@ class CanvaConverter:
         self.output_file = output_file
 
     def grab_html_and_wait(self):
-        print(f"Navigating to {self.url}...")
-        self.driver.get(self.url)
+        # Resolve short links if needed (e.g. canva.link)
+        target_url = self.url
+        if 'canva.link' in self.url:
+            try:
+                headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+                resp = requests.get(self.url, headers=headers, allow_redirects=True, timeout=10)
+                if resp.status_code == 200:
+                    target_url = resp.url
+                    # Convert /edit URL to public /view URL if needed
+                    if '/edit' in target_url:
+                        target_url = target_url.replace('/edit', '/view')
+                    print(f"Resolved Canva link to: {target_url}")
+            except Exception as e:
+                print(f"Notice during shortlink expansion: {e}")
+
+        print(f"Navigating to {target_url}...")
+        self.driver.get(target_url)
         self.driver.set_page_load_timeout(30)
         
         # Wait for Canva page elements to start rendering
@@ -254,7 +269,15 @@ class CanvaConverter:
         except Exception as e:
             print(f"Warning during page load wait: {e}")
 
-        return self.driver.page_source
+        page_src = self.driver.page_source
+
+        if "designing again soon" in page_src.lower():
+            print("\n" + "="*70)
+            print("WARNING: Canva served an access/maintenance page.")
+            print("To capture private or edit-mode Canva links, please pass --cookies cookies.json")
+            print("="*70 + "\n")
+
+        return page_src
 
     def grab_selected_html(self, page_source):
         soup = BeautifulSoup(page_source, 'html.parser')
