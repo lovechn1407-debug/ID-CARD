@@ -339,13 +339,60 @@ class CanvaConverter:
         return '\n'.join(css_blocks)
 
     def parse_and_create_new_html(self, selected_html_content, css_content, font_face_rules):
+        container_css_override = """
+        /* Standalone Browser Preview & Container Visibility Fix */
+        html, body {
+          width: 100% !important;
+          height: 100% !important;
+          min-height: 100vh !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          background: #0f172a !important;
+        }
+
+        main._7Z28OQ, ._7Z28OQ, .NmadZQ, .h0_i9w, .WVSfHg {
+          min-height: 100vh !important;
+          height: auto !important;
+          overflow: visible !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          background: transparent !important;
+        }
+
+        .jbNdZA {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          padding: 30px 10px !important;
+          width: 100% !important;
+        }
+
+        .DPPJ_A {
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+          border-radius: 12px !important;
+          margin: 20px auto !important;
+          position: relative !important;
+          overflow: hidden !important;
+        }
+
+        .DF_utQ {
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+        """
+
         new_html_content = (
             f"<!DOCTYPE html>\n"
             f"<html>\n<head>\n"
             f"<meta charset=\"UTF-8\">\n"
             f"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
             f"<title>Converted Canva Design</title>\n"
-            f"<style>\n{''.join(font_face_rules)}\n{css_content}\n</style>\n"
+            f"<style>\n{''.join(font_face_rules)}\n{css_content}\n{container_css_override}\n</style>\n"
             f"</head>\n"
             f"<body>\n{selected_html_content}\n</body>\n</html>"
         )
