@@ -621,7 +621,6 @@
 @keyframes nCUUyA {to{stroke-dashoffset:0}}
 @keyframes _2_acAQ {0%{fill-opacity:0}to{fill-opacity:1}}
 @keyframes VlMVeQ {0%{opacity:.1}25%{opacity:.03}50%{opacity:.1}to{opacity:.1}}
-@keyframes e438wQ {0%{transform:scale(1)rotate(0)}60%{transform:scale(1.1)rotate(5deg)}to{transform:scale(1)rotate(0)}}
 @keyframes fZQCug {0%{opacity:0}to{opacity:1}}
 @keyframes alHatg {0%{opacity:0}to{opacity:1}}
 @keyframes UqjHqw {0%{opacity:1}to{opacity:0}}
@@ -632,6 +631,7 @@
 @keyframes HBtZ5g {0%{transform:translate(-50%,-50%)rotate(0)scaleY(.45)}20%{transform:translate(-50%,-50%)rotate(90deg)scaleX(.45)}50%{transform:translate(-50%,-50%)rotate(180deg)scaleY(.45)}70%{transform:translate(-50%,-50%)rotate(270deg)scaleX(.45)}to{transform:translate(-50%,-50%)rotate(360deg)scaleY(.45)}}
 @keyframes llTTfQ {0%{opacity:1}to{opacity:0}}
 @keyframes Ox_f5w {to{background-image:none}}
+@keyframes e438wQ {0%{transform:scale(1)rotate(0)}60%{transform:scale(1.1)rotate(5deg)}to{transform:scale(1)rotate(0)}}
 @keyframes ozwD1A {0%{transform:scale(.85)}70%{transform:scale(1)}to{transform:scale(.85)}}
 @keyframes yGraEQ {0%{opacity:.7;transform:scale(1)translate(-50%,-50%)}70%{opacity:0;transform:scale(2)translate(-50%,-50%)}to{opacity:0;transform:scale(1)translate(-50%,-50%)}}
 @keyframes Ng4f6g {0%{opacity:0}to{opacity:1}}
@@ -828,7 +828,6 @@ body {-webkit-overflow-scrolling:touch}
 .QKeKuw .ln2W_Q,.QKeKuw .GSyGMg.bVS77Q span {text-decoration:line-through}
 .QKeKuw .ln2W_Q.Wb8Bag,.QKeKuw .ln2W_Q.Wb8Bag .GSyGMg.bVS77Q span {text-decoration:underline line-through}
 @media print {.b8Yx_A:empty{background-image:none}.b8Yx_A:not(:has(.URcszA)){background-image:none}}
-@media print {.Q8_BLA{display:none}}
 @supports (width:round(10px, 5px)) {.A_A_EQ{--Z_w7Mg:round(up, calc(var(--jdVb7Q) + var(--1StjpA,var(--32_B3g))*2), 1px)}}
 @media print {.EY7A6g{width:100vw;overflow-x:clip}}
 @keyframes c2cyRQ {0%{opacity:.07}25%{opacity:.05}50%{opacity:.07}to{opacity:.07}}
@@ -836,6 +835,8 @@ body {-webkit-overflow-scrolling:touch}
 .OQx3PQ span {text-decoration-line:underline}
 ._99ezUA span {text-decoration-line:line-through}
 .kppAqQ span {text-decoration-line:underline line-through}
+.light {--lLIt9w:linear-gradient(#fff, #fff) padding-box, var(--U8pJuw) border-box}
+._6gciLw svg {filter:grayscale();opacity:.4}
 @supports (-webkit-overflow-scrolling:touch) {.xE8XcA{height:auto;margin-top:-100vh;padding-top:100vh}}
 @font-face  {font-family:calibrate;src:url(images/b46630e470f4040eba7033cf2435edce.woff)format("woff");font-display:block}
 ._2UyCZQ {color:#000;--H97cbQ:16px;letter-spacing:0;--Xm-_8w:0;text-align:left;text-transform:none;tab-size:4;font-synthesis:none;font-kerning:none;font-feature-settings:"liga" var(--I1TtXQ,off), "clig" var(--rt6TaA,off), "calt" var(--o_YY6w,off);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;word-break:normal;overflow-wrap:break-word;white-space:normal;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none;contain:style;direction:ltr;height:auto;padding:0;font-family:unset;font-style:normal;font-weight:400;line-height:1.4;position:relative;overflow:visible}
@@ -924,6 +925,8 @@ body {-webkit-overflow-scrolling:touch}
 .E8yZTA {position:relative}
 .IBvdUw {pointer-events:none;-webkit-user-select:none;user-select:none;position:absolute;inset:0}
 .hWv4NA {transform-origin:0 0;position:relative}
+@media (max-width:599px) {.ncH3wQ,.MbkImg{max-width:calc(100% - 8px)}.MbkImg .ncH3wQ{max-width:100%}}
+.light {--s9C9sw:#1d1f26}
 .nNPJGQ .yaf18A>svg {width:40px;height:40px}
 .K_SphA .yaf18A>svg {width:72px;height:72px}
 @supports (-webkit-touch-callout:none) {.BE2rWg:-webkit-drag{display:none}}
@@ -1178,7 +1181,6 @@ body {-webkit-overflow-scrolling:touch}
 @property --x-s4zmm1 {syntax:"*";inherits:false}
 @property --x-tcm42p {syntax:"*";inherits:false}
 @property --x-textAlign {syntax:"*";inherits:false}
-@property --x-top {syntax:"*";inherits:false}
 @property --x-transform {syntax:"*";inherits:false}
 @property --x-transition {syntax:"*";inherits:false}
 @property --x-txj11k {syntax:"*";inherits:false}
@@ -1216,7 +1218,7 @@ body {-webkit-overflow-scrolling:touch}
 @media (min-width:1200px) and (max-width:1649px) {:where(:root),:where(.x1yowkxt){--x1ykqo7r:calc(96 * var(--pxInRem,.1rem));--xxh0pty:calc(84 * var(--pxInRem,.1rem));--x1rx4e74:calc(64 * var(--pxInRem,.1rem));--x1pv9p3q:calc(48 * var(--pxInRem,.1rem));--xbupry8:calc(42 * var(--pxInRem,.1rem))}}
 @media (min-width:1200px) {:where(:root),:where(.x1yowkxt){--xsee12u:1.1}}
 :where(.x6brqfx):not(_),:where(.x6brqfx:root):not(_):not(_) {--xl92dck:#404f6d0f;--x151354k:#39466024;--x1t1u828:#db142c;--x1p5og4y:#b61629;--x5ilee5:#911826;--x4sjelh:#fff;--xe2ivut:#1c213080;--x2ebo2r:#13162099;--x18tj7p:#13162099;--x1q9iir0:#101219b2;--xqnz2do:#0f1015d9;--xsdzku5:#fff;--x19m57in:#ffffffb2;--x1660u1e:#8b3dff;--x16hqakj:#7630d7;--x3n0y69:#612dae;--xhg6az6:#fff;--xh4m40x:#0f101500;--xpvh4sr:#404f6d0f;--x501k60:#39466024;--x1ir9kr0:#35415a33;--x1dsndmz:#0f1015;--xwkuh91:#a370fc26;--xgimmd3:#a370fc26;--x1lemt95:#a370fc33;--x1awq7qb:#8b3dff;--x1oqqnha:#4a2e7e;--xjs6pkv:#0f101500;--x1wktk2a:#1c213080;--xr554lp:#0f101500;--x63a40r:#404f6d0f;--xebw200:#39466024;--x1i8pmqk:#0f1015;--x1cqhvjm:#db142c;--x1e0mmf0:#0f1015;--x7bg8nn:#1a62ff;--x1jm6d4o:#13162099;--x7qdu6k:#008009;--xdqug6n:#0f1015d9;--x14yqsw4:#101219b2;--x1j1tewk:#ad5a00;--x1vxkbn5:#fff;--xv87jgu:#404f6d0f;--x1astmcs:#35415a33;--x1df7mmp:#39466024;--x1ipaulr:#8b3dff;--xons9c3:#1c213080;--xi1val4:#db142c;--x1h3470w:#8b3dff;--xkx7x6d:#39466024;--x7zbkm8:#7630d7;--x16r6ouo:#612dae;--xxuhya4:#8b3dff;--x6tqy5l:#fff;--xboukqu:#1c213080;--x1t1uism:#1c213080;--xehadnz:#db142c;--x12ne0ft:#fff;--x1w1o0vc:#ffd6d8;--xeoo48q:#501b21;--xb0ss7s:#8b3dff;--x15t4y1o:#fff;--x9qt2ij:#e7dbff;--xaf1imm:#352459;--xy9f1if:#1a62ff;--xjvpt88:#fff;--xkhl2ty:#cce1ff;--x18l31p8:#182c59;--x1xrukdv:#13162099;--x4uufk8:#fff;--x120f3bx:#008009;--xvimi7p:#fff;--x1ddyelk:#c3eac4;--xo18w50:#133416;--xgwv5t7:#ad5a00;--xnemg5b:#fff;--x19dd7i0:#ffd9ad;--xfuzduc:#3e2a14;--x1gtpwm7:#fff;--x9q6ch9:#c1c5cd;--x18ky53c:#db142c;--x9zeksj:#b61629;--x1bw7z3e:#911826;--x1lvzpne:#8b3dff;--xmy1rsr:#1c213080;--x1fbwvsx:#7630d7;--xkvwjcq:#612dae;--x24s82w:#39466024;--xnxrlhk:#3d8bff;--xj6tdmq:#39466024;--xh4btzm:#35415a33;--x19mt2sw:#242c3d66;--x1d72bzt:#404f6d0f;--xz780lh:#242c3d66;--x4961oa:0px 24px 24px -18px inset #ffffff29, 0px 1px .5px 0px inset #ffffff40, 0px -1px .5px 0px inset #151e821f, 0px 4px 8px 0px #151e8212, 0px 8px 16px 0px #151e8208;--x1be2sc2:0px 24px 24px -18px inset #ffffff29, 0px 1px .5px 0px inset #ffffff40, 0px -1px .5px 0px inset #151e821f, 0px 1px 2px 0px #151e8212, 0px 3px 4px 0px #151e8208;--xsdo7ii:#fff;--x1lk3xck:#fff;--xk5icja:0px 0px 0px .5px #404f6d0f, 0px 8px 16px 0px #151e821f, 0px 24px 24px 0px #151e820f;--x1k2an3g:#fff;--xgfqmhp:0px 0px 0px .5px #404f6d12, 0px 2px 5px 0px #151e821f, 0px 6px 12px 0px #151e820f;--xin2wzn:0px 0px 0px .5px #404f6d0f, 0px 1px 2px 0px #151e821f, 0px 2px 4px 0px #151e820f;--x5ubs4o:#f3f4f7;--xopx0hl:linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%);--xafjxh:linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%);--x1vocd1k:linear-gradient(135deg, #03a5ab 0%, #7d2ae8 100%);--xhf5vib:linear-gradient(90deg, #00c4cc 0%, #7d2ae8 100%);--x64jd1c:linear-gradient(180deg, #f9f5fe 0%, #f5ffff 100%)}
-:where(.xo86nag):not(_),:where(.xo86nag:root):not(_):not(_) {--xl92dck:#ffffff12;--x151354k:#ffffff26;--x1t1u828:#b61629;--x1p5og4y:#911826;--x5ilee5:#721d27;--x4sjelh:#fff;--xe2ivut:#ffffff80;--x2ebo2r:#13162099;--x18tj7p:#13162099;--x1q9iir0:#101219b2;--xqnz2do:#0f1015d9;--xsdzku5:#fff;--x19m57in:#ffffffb2;--x1660u1e:#7630d7;--x16hqakj:#612dae;--x3n0y69:#4a2e7e;--xhg6az6:#fff;--xh4m40x:#fff0;--xpvh4sr:#ffffff12;--x501k60:#ffffff26;--x1ir9kr0:#fff3;--x1dsndmz:#fff;--xwkuh91:#a370fc4d;--xgimmd3:#a370fc4d;--x1lemt95:#a370fc33;--x1awq7qb:#a370fc;--x1oqqnha:#fff;--xjs6pkv:#fff0;--x1wktk2a:#ffffff80;--xr554lp:#fff0;--x63a40r:#ffffff12;--xebw200:#ffffff26;--x1i8pmqk:#fff;--x1cqhvjm:#fd4958;--x1e0mmf0:#ffffffe5;--x7bg8nn:#3d8bff;--x1jm6d4o:#ffffff80;--x7qdu6k:#36a138;--xdqug6n:#fffc;--x14yqsw4:#ffffffb2;--x1j1tewk:#d17600;--x1vxkbn5:#101219b2;--xv87jgu:#ffffff12;--x1astmcs:#fff3;--x1df7mmp:#ffffff26;--x1ipaulr:#a370fc;--xons9c3:#ffffff80;--xi1val4:#fd4958;--x1h3470w:#8b3dff;--xkx7x6d:#ffffff26;--x7zbkm8:#7630d7;--x16r6ouo:#612dae;--xxuhya4:#a370fc;--x6tqy5l:#fff;--xboukqu:#ffffff80;--x1t1uism:#ffffff80;--xehadnz:#b61629;--x12ne0ft:#fff;--x1w1o0vc:#721d27;--xeoo48q:#fff;--xb0ss7s:#7630d7;--x15t4y1o:#fff;--x9qt2ij:#4a2e7e;--xaf1imm:#fff;--xy9f1if:#1854d7;--xjvpt88:#fff;--xkhl2ty:#1d3b7c;--x18l31p8:#fff;--x1xrukdv:#13162099;--x4uufk8:#fff;--x120f3bx:#096d11;--xvimi7p:#fff;--x1ddyelk:#16461a;--xo18w50:#fff;--xgwv5t7:#944f05;--xnemg5b:#fff;--x19dd7i0:#563715;--xfuzduc:#fff;--x1gtpwm7:#fff;--x9q6ch9:#606671;--x18ky53c:#fd4958;--x9zeksj:#db142c;--x1bw7z3e:#fd4958;--x1lvzpne:#a370fc;--xmy1rsr:#ffffff80;--x1fbwvsx:#8b3dff;--xkvwjcq:#a370fc;--x24s82w:#ffffff26;--xnxrlhk:#3d8bff;--xj6tdmq:#ffffff26;--xh4btzm:#fff3;--x19mt2sw:#fff6;--x1d72bzt:#ffffff12;--xz780lh:#13162099;--x4961oa:0px 24px 24px -18px inset #ffffff14, 0px 1px .5px 0px inset #ffffff40, 0px -1px .5px 0px inset #00000040, 0px 4px 8px 0px #00000024, 0px 8px 16px 0px #00000012;--x1be2sc2:0px 24px 24px -18px inset #ffffff14, 0px 1px .5px 0px inset #ffffff40, 0px -1px .5px 0px inset #00000040, 0px 1px 2px 0px #00000024, 0px 3px 4px 0px #00000012;--xsdo7ii:#16171d;--x1lk3xck:#24262e;--xk5icja:0px 1px .5px 0px inset #ffffff1f, 0px 0px 0px .5px inset #ffffff1a, 0px 6px 12px 0px #00000036, 0px 24px 24px 0px #00000024;--x1k2an3g:#1d1f26;--xgfqmhp:0px 1px .5px 0px inset #ffffff1f, 0px 0px 0px .5px inset #ffffff1a, 0px 2px 5px 0px #00000036, 0px 6px 12px 0px #00000024;--xin2wzn:0px 1px .5px 0px inset #ffffff12, 0px 0px 0px .5px inset #ffffff12, 0px 1px 2px 0px #00000036, 0px 2px 4px 0px #00000024;--x5ubs4o:#0f1015;--xopx0hl:linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%);--xafjxh:linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%);--x1vocd1k:linear-gradient(135deg, #65ecf1 0%, #a370fc 100%);--xhf5vib:linear-gradient(90deg, #00c4cc 0%, #7d2ae8 100%);--x64jd1c:linear-gradient(180deg, #1d063f 0%, #03152c 100%)}
+:where(.xh8d450):not(_),:where(.xh8d450:root):not(_):not(_) {--xl92dck:#ffffff12;--x151354k:#ffffff26;--x1t1u828:#b61629;--x1p5og4y:#911826;--x5ilee5:#721d27;--x4sjelh:#fff;--xe2ivut:#ffffff80;--x2ebo2r:#13162099;--x18tj7p:#13162099;--x1q9iir0:#101219b2;--xqnz2do:#0f1015d9;--xsdzku5:#fff;--x19m57in:#ffffffb2;--x1660u1e:#7630d7;--x16hqakj:#612dae;--x3n0y69:#4a2e7e;--xhg6az6:#fff;--xh4m40x:#fff0;--xpvh4sr:#ffffff12;--x501k60:#ffffff26;--x1ir9kr0:#fff3;--x1dsndmz:#fff;--xwkuh91:#a370fc4d;--xgimmd3:#a370fc4d;--x1lemt95:#a370fc33;--x1awq7qb:#a370fc;--x1oqqnha:#fff;--xjs6pkv:#fff0;--x1wktk2a:#ffffff80;--xr554lp:#fff0;--x63a40r:#ffffff12;--xebw200:#ffffff26;--x1i8pmqk:#fff;--x1cqhvjm:#fd4958;--x1e0mmf0:#ffffffe5;--x7bg8nn:#3d8bff;--x1jm6d4o:#ffffff80;--x7qdu6k:#36a138;--xdqug6n:#fffc;--x14yqsw4:#ffffffb2;--x1j1tewk:#d17600;--x1vxkbn5:#101219b2;--xv87jgu:#ffffff12;--x1astmcs:#fff3;--x1df7mmp:#ffffff26;--x1ipaulr:#a370fc;--xons9c3:#ffffff80;--xi1val4:#fd4958;--x1h3470w:#8b3dff;--xkx7x6d:#ffffff26;--x7zbkm8:#7630d7;--x16r6ouo:#612dae;--xxuhya4:#a370fc;--x6tqy5l:#fff;--xboukqu:#ffffff80;--x1t1uism:#ffffff80;--xehadnz:#b61629;--x12ne0ft:#fff;--x1w1o0vc:#721d27;--xeoo48q:#fff;--xb0ss7s:#7630d7;--x15t4y1o:#fff;--x9qt2ij:#4a2e7e;--xaf1imm:#fff;--xy9f1if:#1854d7;--xjvpt88:#fff;--xkhl2ty:#1d3b7c;--x18l31p8:#fff;--x1xrukdv:#13162099;--x4uufk8:#fff;--x120f3bx:#096d11;--xvimi7p:#fff;--x1ddyelk:#16461a;--xo18w50:#fff;--xgwv5t7:#944f05;--xnemg5b:#fff;--x19dd7i0:#563715;--xfuzduc:#fff;--x1gtpwm7:#fff;--x9q6ch9:#3e424c;--x18ky53c:#fd4958;--x9zeksj:#db142c;--x1bw7z3e:#fd4958;--x1lvzpne:#a370fc;--xmy1rsr:#ffffff80;--x1fbwvsx:#8b3dff;--xkvwjcq:#a370fc;--x24s82w:#ffffff26;--xnxrlhk:#3d8bff;--xj6tdmq:#ffffff26;--xh4btzm:#fff3;--x19mt2sw:#fff6;--x1d72bzt:#ffffff12;--xz780lh:#13162099;--x4961oa:0px 24px 24px -18px inset #ffffff14, 0px 1px .5px 0px inset #ffffff40, 0px -1px .5px 0px inset #00000040, 0px 4px 8px 0px #00000024, 0px 8px 16px 0px #00000012;--x1be2sc2:0px 24px 24px -18px inset #ffffff14, 0px 1px .5px 0px inset #ffffff40, 0px -1px .5px 0px inset #00000040, 0px 1px 2px 0px #00000024, 0px 3px 4px 0px #00000012;--xsdo7ii:#16171d;--x1lk3xck:#24262e;--xk5icja:0px 1px .5px 0px inset #ffffff1f, 0px 0px 0px .5px inset #ffffff1a, 0px 6px 12px 0px #00000036, 0px 24px 24px 0px #00000024;--x1k2an3g:#1d1f26;--xgfqmhp:0px 1px .5px 0px inset #ffffff1f, 0px 0px 0px .5px inset #ffffff1a, 0px 2px 5px 0px #00000036, 0px 6px 12px 0px #00000024;--xin2wzn:0px 1px .5px 0px inset #ffffff12, 0px 0px 0px .5px inset #ffffff12, 0px 1px 2px 0px #00000036, 0px 2px 4px 0px #00000024;--x5ubs4o:#0f1015;--xopx0hl:linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%);--xafjxh:linear-gradient(135deg, #00c4cc 0%, #7d2ae8 100%);--x1vocd1k:linear-gradient(135deg, #65ecf1 0%, #a370fc 100%);--xhf5vib:linear-gradient(90deg, #00c4cc 0%, #7d2ae8 100%);--x64jd1c:linear-gradient(180deg, #1d063f 0%, #03152c 100%)}
 :where(.x4rzbr9) {--x32f7hi:var(--x1q9iir0)}
 @media (min-width:900px) and (max-width:1199.9px) {:where(.x1fe88yx):not(_){--x9c5hy0:var(--x-dv110l)}}
 @media (min-width:1650px) {:where(.x12kagr4):not(_){--x9c5hy0:var(--x-jbph9z)}}
@@ -1279,8 +1281,6 @@ body {-webkit-overflow-scrolling:touch}
 :where(.x1cd9imp:where(.x-default-marker[dir=rtl] *)):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_) {transform:rotate(90deg)}
 :where(.x4k0q4q:where(.x-default-marker[dir=rtl] *)):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_) {transform:scaleX(-1)}
 :where(.x1j7zbj8:where(.x-default-marker[dir=rtl] *)):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_) {transform:translate(50%,-50%)}
-:where(.x1hk276b:where(.x-default-marker[dir=rtl] *)):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_) {transform:translate(-100%)}
-:where(.x1lgit8e:where(.x-default-marker[dir=rtl] *)):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_) {transform:translate(100%)}
 :where(.x1ygyvn0:where(.x-default-marker[dir=rtl] *)):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_) {transform:translateY(-50%)scaleX(-1)}
 @media (min-width:1650px) {:where(.xkux0lx):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){align-items:var(--x-19bf7i)}}
 @media (min-width:1200px) and (max-width:1649.9px) {:where(.xo4j62v):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){align-items:var(--x-1gd8ozu)}}
@@ -1387,7 +1387,6 @@ body {-webkit-overflow-scrolling:touch}
 @media (max-width:1649px) {:where(.xuruu1g):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){max-width:100%}}
 @media (max-width:599px) {:where(.x11ql4mw):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){max-width:100%}}
 @media (max-width:899px) {:where(.xx1nl2z):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){max-width:100%}}
-@media (max-width:599px) {:where(.xmqnwf4):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){max-width:calc(100% - 8px)}}
 @media (min-width:1200px) and (max-width:1649.9px) {:where(.x3bxb3u):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){padding-bottom:var(--x-1khj6nr)}}
 @media (min-width:900px) and (max-width:1199.9px) {:where(.x1de9wke):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){padding-bottom:var(--x-1v35pem)}}
 @media (min-width:600px) and (max-width:899.9px) {:where(.xxygao):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_):not(_){padding-bottom:var(--x-1wiv5y0)}}
@@ -1471,6 +1470,7 @@ body {-webkit-overflow-scrolling:touch}
 .ql-editor li.ql-direction-rtl>.ql-ui:before {text-align:left;margin-left:.3em;margin-right:-1.5em}
 .ql-editor .ql-direction-rtl {text-align:inherit;direction:rtl}
 @keyframes kWpQZw {0%{opacity:.6}50%{opacity:.5}to{opacity:.6}}
+.light {--uz36wg:#2b354a4d;--J5qhlg:#242c3d66;--sc8YpQ:0px 0px 1px #404f6d0f, 0px 2px 2px #2b354a4d;--amxGyw:inset 0px 1px 1px 0px #151e820f}
 .light {--s2EMVg:#fff6}
 @media (min-width:600px) {.Me3ejg{--OhIXHw:var(--n-rkYA);--xrlKSw:var(--OhIXHw);--Ulaa4Q:var(--aOKitg);--bMVHuA:var(--Ulaa4Q);--bJW57A:var(--_2G9Zg);--y3VSEw:var(--bJW57A);--TmuOPA:var(--X4o5IQ);--FzvlhA:var(--TmuOPA);--PonzLA:var(--ud1SSQ);--cEUfZQ:var(--PonzLA);--aW1Exg:var(--1LTx6w);--6ki7Fw:var(--aW1Exg);--vopvBQ:var(--rucCGA);--W6yS4A:var(--vopvBQ)}}
 @media (min-width:900px) {.Me3ejg{--6h1yBw:var(--OhIXHw);--xrlKSw:var(--6h1yBw);--6GoYpg:var(--Ulaa4Q);--bMVHuA:var(--6GoYpg);--8xtt1Q:var(--bJW57A);--y3VSEw:var(--8xtt1Q);--XPIGyA:var(--TmuOPA);--FzvlhA:var(--XPIGyA);--Z4m2FQ:var(--PonzLA);--cEUfZQ:var(--Z4m2FQ);--o7VykQ:var(--aW1Exg);--6ki7Fw:var(--o7VykQ);--ibSRpg:var(--vopvBQ);--W6yS4A:var(--ibSRpg)}}
@@ -1521,8 +1521,6 @@ body {-webkit-overflow-scrolling:touch}
 .dark,.light {--nXnqsA:#8b3dff}
 .k0AXBA,.Mdwk1w {pointer-events:none;opacity:0;box-sizing:border-box;caret-color:#0000;outline:none;position:fixed;top:50%;left:50%}
 @media (pointer:coarse) {.jLOqpQ{--2aiujw:20px}}
-.light {--lLIt9w:linear-gradient(#fff, #fff) padding-box, var(--U8pJuw) border-box}
-._6gciLw svg {filter:grayscale();opacity:.4}
 @keyframes nIsSBg {50%{opacity:0}}
 .light {--S9mRgw:#f3f4f7}
 .cdPXSw>* {scroll-snap-align:center;margin-inline-start:var(--NskXVw,0px)}
@@ -1667,8 +1665,6 @@ body {-webkit-overflow-scrolling:touch}
 .dn2gkQ img {opacity:1;filter:none}
 @media screen and (min-height:840px) {._97eHHA{max-height:424px}.qgTpoA{height:424px}.S3kcAA{max-height:424px}}
 .light {--KLx9Tw:var(--9v5PLg);--cLb2Sg:.15}
-@media (hover:hover) and (pointer:fine) {.UZQhMg:hover .bxNc_g{opacity:1}}
-@media (prefers-reduced-motion:reduce) {.bxNc_g{transition:none}}
 @media (prefers-reduced-motion:reduce) {.dwG31w{transition:none}}
 @keyframes sNfWbw {0%{opacity:0}to{opacity:1}}
 .light {--MShPWQ:linear-gradient(to bottom right, #8b3dff, #000)}
@@ -2207,6 +2203,7 @@ body {-webkit-overflow-scrolling:touch}
 .light {--yFNydg:#35415a33}
 .light {--Vysv9Q:linear-gradient(to right, #fff0 0%, #ffffffb2 33%, #ffffffb2 66%, #fff0 100%)}
 @keyframes DkwQdA {0%{opacity:0;transform:translate(0)}25%{opacity:1}75%{opacity:1}to{opacity:0;transform:translate(200%)}}
+@media (prefers-reduced-motion:reduce) {.tqut9Q .tuN9aA,.tqut9Q .ALc6Yg{transition:none}}
 @media (hover:hover) {.y_6bUQ:hover{cursor:ew-resize}.y_6bUQ:hover .c9fvmg{background-color:#8b3dff}}
 @media (hover:hover) {.DuTSAQ:hover{cursor:ew-resize}.DuTSAQ:hover .LZc7cQ{background-color:#8b3dff}}
 @media (max-width:599px) {.U_t2yg{max-width:96px;-webkit-mask-image:linear-gradient(90deg,#0f1015 72px,#0000 96px);mask-image:linear-gradient(90deg,#0f1015 72px,#0000 96px)}}
@@ -2262,9 +2259,7 @@ body {-webkit-overflow-scrolling:touch}
 @keyframes _2_acAQ {0%{fill-opacity:0}to{fill-opacity:1}}
 .light {--4l8wpQ:transparent}
 @keyframes VlMVeQ {0%{opacity:.1}25%{opacity:.03}50%{opacity:.1}to{opacity:.1}}
-@keyframes e438wQ {0%{transform:scale(1)rotate(0)}60%{transform:scale(1.1)rotate(5deg)}to{transform:scale(1)rotate(0)}}
 @media (min-width:600px) {.jHnujA{max-width:544px}}
-@media (min-width:900px) {.yx4CAw{width:320px}}
 @media (min-width:600px) {.tPtfOg{width:360px}}
 @media (max-width:899px) {.Wq716g{height:560px}}
 .light,.dark {--FLqSXA:#e8eaed;--Oj2_Ng:#1d1f26}
@@ -2305,6 +2300,7 @@ body {-webkit-overflow-scrolling:touch}
 .qrSR3Q.ifwjug.zoRZ4A>div:before {animation:VZLskA 5s linear infinite, llTTfQ .3s ease-out var(--Bxh2Dw) forwards}
 @keyframes llTTfQ {0%{opacity:1}to{opacity:0}}
 @keyframes Ox_f5w {to{background-image:none}}
+@keyframes e438wQ {0%{transform:scale(1)rotate(0)}60%{transform:scale(1.1)rotate(5deg)}to{transform:scale(1)rotate(0)}}
 .light {--ReMiMw:var(--9v5PLg);--slkxkg:.15}
 @media (min-width:600px) {.g8_PHQ{justify-items:center;width:600px;max-width:100%;padding:40px 32px 32px}}
 @media (min-width:600px) {._tWwOw{height:100%}.fvo_iA{margin-top:auto}.gide2Q .fvo_iA{margin-top:0}}
@@ -2330,58 +2326,64 @@ body {-webkit-overflow-scrolling:touch}
 .light {--D_rk8Q:linear-gradient(to top, #ffffffb2 0%, transparent 100%)}
 @media only screen and (max-width:410px) {#credential_picker_container{overflow-x:hidden;overflow-y:auto;right:0;width:100vw}#credential_picker_container .L5Fo6c-PQbLGe{width:100vw}}
 @supports not (word-break:break-word) {.i8XOSQ{width:148px;display:inline-block;overflow:hidden}}
+@media (min-width:900px) {.yx4CAw{width:320px}}
 
-.DF_utQ, ._14BoqA, .DPPJ_A, .Ms_IOA, .Zp7NQw, .a26Xuw, .PcHy7w, .uk_25A, .H5qArQ, .Izwocg {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
+        .DF_utQ, ._14BoqA, .DPPJ_A, .Ms_IOA, .Zp7NQw, .a26Xuw, .PcHy7w, .uk_25A, .H5qArQ, .Izwocg {
+          visibility: visible !important;
+          opacity: 1 !important;
+        }
 
-main._7Z28OQ, ._7Z28OQ, .NmadZQ, .h0_i9w, .WVSfHg {
-  min-height: 100vh !important;
-  height: auto !important;
-  overflow: visible !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  background: transparent !important;
-}
+        main._7Z28OQ, ._7Z28OQ, .NmadZQ, .h0_i9w, .WVSfHg {
+          min-height: 100vh !important;
+          height: auto !important;
+          overflow: visible !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: flex-start !important;
+          background: transparent !important;
+        }
 
-.jbNdZA {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 40px 10px !important;
-  width: 100% !important;
-}
+        .jbNdZA {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          padding: 40px 10px !important;
+          width: 100% !important;
+        }
 
-.DPPJ_A {
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8) !important;
-  border-radius: 16px !important;
-  margin: 30px auto !important;
-  position: relative !important;
-  overflow: hidden !important;
-  background: #0a0d1d !important;
-}
+        .DPPJ_A {
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8) !important;
+          border-radius: 16px !important;
+          margin: 30px auto !important;
+          position: relative !important;
+          overflow: hidden !important;
+          background: #0a0d1d !important;
+        }
+        
 
 
 /* ===== STANDALONE CARD VIEWER RESET ===== */
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background: radial-gradient(ellipse at 20% 50%, #1a1040 0%, #070b1a 60%, #000000 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: 'Inter', sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  height: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  /* Kill Canva's app-level overflow:hidden */
+  background: radial-gradient(ellipse at 20% 50%, #1a1040 0%, #070b1a 60%, #000000 100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  font-family: 'Inter', sans-serif !important;
+  user-select: auto !important;
+  -webkit-user-select: auto !important;
 }
 
 /* ===== CARD VIEWER WRAPPER ===== */
@@ -2413,27 +2415,16 @@ html, body {
     0 0 100px rgba(100,80,255,0.25);
 }
 
-/* ===== FIX CANVA CONTAINER OVERFLOWS ===== */
-/* Remove broken SVG clip-paths that clip out the card background */
-.bFnJ2A {
-  clip-path: none !important;
-  -webkit-clip-path: none !important;
-}
-
-/* All absolutely-positioned card elements must be visible */
-.DF_utQ {
-  position: absolute !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-/* Card page container */
+/* ===== FIX 1: CARD PAGE CONTAINER ===== */
+/* DPPJ_A has explicit pixel width/height in inline style — just ensure it's visible */
 .DPPJ_A {
   position: relative !important;
   overflow: hidden !important;
+  flex-shrink: 0 !important;
 }
 
-/* Inner scaled canvas */
+/* ===== FIX 2: INNER SCALED CANVAS (_14BoqA) ===== */
+/* This element has transform:scale(2.46605) in inline style — it MUST overflow to fill card */
 ._14BoqA {
   position: relative !important;
   transform-origin: 0 0 !important;
@@ -2442,52 +2433,41 @@ html, body {
 
 ._mXnjA {
   position: relative !important;
+  overflow: visible !important;
 }
 
-/* Background fill layer */
+/* ===== FIX 3: ALL CARD ELEMENTS VISIBLE ===== */
+/* Canva uses position:absolute for all card content */
+.DF_utQ {
+  cursor: auto !important;
+  outline: none !important;
+  position: absolute !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ===== FIX 4: BACKGROUND FILL LAYER ===== */
 .fbzKiw {
   position: absolute !important;
   inset: 0 !important;
 }
 
-/* Image containers */
-.a26Xuw {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.PcHy7w, .uk_25A, .Ty61NA {
-  width: 100% !important;
-  height: 100% !important;
+/* ===== FIX 5: GRADIENT SVG BACKGROUND LAYERS ===== */
+/* These are the radial/linear gradient SVG backgrounds.
+   bFnJ2A uses clip-path:url(#__idN) — these local SVG defs exist in the SAME DPPJ_A container,
+   so they DO work. BUT the issue is the element is sized at e.g. 256x405 then scaled down 0.81x.
+   The clip-path clips it to the card boundary shape — we MUST keep clip-path for the background shapes.
+   We only need to ensure the PARENT (.hWv4NA) is visible and not hidden. */
+.hWv4NA {
   position: relative !important;
-}
-
-.H5qArQ {
-  width: 100% !important;
-  height: 100% !important;
-  position: relative !important;
-}
-
-.Izwocg {
-  position: absolute !important;
-  overflow: hidden !important;
-}
-
-._7_i_XA {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-}
-
-/* SVG canvas layers */
-._KMJVg, ._7KaXww {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
   overflow: visible !important;
+}
+
+/* bFnJ2A: Keep clip-path ON (it references local SVG defs in the same DOM) */
+/* But fix: make it visible and positioned correctly */
+.bFnJ2A {
+  position: relative !important;
+  /* clip-path is set via inline style — leave it alone, it uses local SVG defs */
 }
 
 .Ms_IOA {
@@ -2496,7 +2476,70 @@ html, body {
   position: relative !important;
 }
 
-/* Text rendering */
+/* ===== FIX 6: SVG ELEMENTS ===== */
+._KMJVg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: visible !important;
+}
+._7KaXww {
+  /* The SVG clip-path def holder - must exist but can be invisible */
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: visible !important;
+}
+
+/* ===== FIX 7: IMAGE ELEMENTS ===== */
+.Zp7NQw {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.a26Xuw {
+  width: 100% !important;
+  height: 100% !important;
+}
+.PcHy7w {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+.uk_25A.Ty61NA {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.H5qArQ {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.Izwocg {
+  position: absolute !important;
+  overflow: hidden !important;
+}
+._7_i_XA {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ===== FIX 8: SHAPE ELEMENTS ===== */
+.xx0k8Q {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+/* ===== FIX 9: TEXT ELEMENTS ===== */
+/* aF9o6Q is the text element — overflow: visible is critical for ECELL big text */
 .aF9o6Q {
   position: relative !important;
   overflow: visible !important;
@@ -2506,22 +2549,49 @@ html, body {
   position: relative !important;
 }
 
+/* ECELL gradient text: .T4Rl4A uses background-clip:text
+   The _28USrA element has inline background-image (the gradient SVG data URI)
+   and needs background-clip:text to show through the transparent text.
+   CRITICAL: font-size is set via --H97cbQ CSS variable */
 ._28USrA {
   margin: 0 !important;
+  font-size: var(--H97cbQ, inherit) !important;
 }
 
-/* Drop-shadow wrapper */
-.xx0k8Q {
+/* .IBvdUw is the aria-hidden duplicate layer for gradient text rendering */
+.IBvdUw {
   position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none !important;
 }
 
-/* Shape containers */
-.hWv4NA {
+/* Background-clip text for gradient ECELL lettering */
+.T4Rl4A {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  background-repeat: no-repeat !important;
+}
+
+/* e1_zQg is the editable text layer (with color:transparent for gradient effect)
+   We need this to be visible so gradient text shows */
+.e1_zQg {
+  visibility: visible !important;
+}
+
+/* a_GcMg: span inside text — font-size: 1em means it takes --H97cbQ from parent */
+.a_GcMg {
   position: relative !important;
+}
+
+/* ===== FIX 10: Scrollbar and pointer removal ===== */
+.iH_BFQ {
   overflow: visible !important;
+}
+
+/* Hide Canva toolbar/UI chrome that got extracted but isn't card content */
+.hXAFLQ, .F8qupg, .tDWb8g, ._QR9_A, .TaAZbw, .Yygc6A, .xkdpibf {
+  display: none !important;
 }
 
   </style>
@@ -2550,7 +2620,7 @@ html, body {
       font-family: 'Inter', system-ui, sans-serif;
     ">FRONT</div>
     <div class="card-wrapper">
-      <div class="DPPJ_A" data-page-id="0" style="width: 503.074px; height: 799px; margin: 0px;"><div class="_14BoqA" style="width: 204px; height: 324px; transform: scale(2.46605);"><div aria-hidden="true"><div class="_mXnjA" lang="en-IN" style="width: 204px; height: 324px;"><div class="_6t4CHA"><div class="a26Xuw"><div class="fbzKiw" style="background: rgb(255, 255, 255);"></div></div></div><div style="position: absolute; top: 20.4px; left: 20.4px; width: 163.2px; height: 283.2px;"></div><div class="DF_utQ _0xkaeQ" id="LB7f241MvdYFZg15" style="width: 208.636px; height: 330.72px; transform: translate(-1.66782px, -1.33426px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 330.72px; width: 208.636px; transform: scale(1);"><div class="hWv4NA" style="width: 208.636px; height: 330.72px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id1"><path d="M0,0L256,0L256,405.80035005762016L0,405.80035005762016Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id1"); width: 256px; height: 405.8px; transform: scale(0.814983, 0.814983); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'><div class="Ms_IOA"><svg class="_KMJVg" preserveaspectratio="xMidYMid slice" role="presentation" viewbox="0 0 256 405.8"><defs><radialgradient cx="0" cy="0" fx="0" fy="0" gradientunits="userSpaceOnUse" id="__id2__id3" r="479.802"><stop offset="0" stop-color="#222189" stop-opacity="1"></stop><stop offset="1" stop-color="#000000" stop-opacity="1"></stop></radialgradient></defs><rect fill="url(#__id2__id3)" height="405.8" width="256" x="0" y="0"></rect></svg></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBMMV2931CW8T7ST" style="width: 209.303px; height: 33.8477px; transform: translate(-2.33495px, -1.33426px);"><div class="xx0k8Q" style="filter: drop-shadow(rgba(0, 0, 0, 0.3) 14.142px 14.142px 10px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 33.8477px; width: 209.303px; transform: scale(1);"><div class="hWv4NA" style="width: 209.303px; height: 33.8477px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id5"><path d="M0,0L1583.0195879702294,0L1583.0195879702294,256L0,256Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id5"); background: rgb(217, 217, 217); width: 1583.02px; height: 256px; transform: scale(0.132217, 0.132217); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBVnJFRfz8KtSwRm" style="width: 39.8421px; height: 28.8681px; transform: translate(3.30291px, 1.15553px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 77.4025px; height: 96.7964px; transform: translate(-18.7802px, -33.5646px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2Fbccc673e-5586-4986-a471-a83fd37e1e69/watermark:F/width:639?csig=AAAAAAAAAAAAAAAAAAAAAEUuZJBwAZdEPukUOl3ryH3EbKbdf5nHaii72U_AIJdc&amp;exp=1787833625&amp;osig=AAAAAAAAAAAAAAAAAAAAAF4iB96IgTZuwA8zPrPyjMzUgxlAGTYV0wBJej_v9XJI&amp;signer=media-rpc&amp;x-canva-quality=screen"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 28.8681px; width: 39.8421px; pointer-events: none; transform: scale(1);"></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBPcy1rwN3FjRkl4" style="width: 197.394px; height: 131.977px; transform: translate(3.30291px, 47.5351px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 169.038px; height: 113.018px; transform: scale(1.16775, 1.16775); transform-origin: 0px 0px;"><div style="transform: translate(0px, -9.39113px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YACgESME5ew_0, _fb_, auto; --H97cbQ: 93.9113px; color: rgb(9, 25, 174); line-height: 131px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 700; font-style: normal; color: transparent; font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">ECELL</span></p></div></div><div aria-hidden="true" class="IBvdUw"><div class="_2UyCZQ vkN2Cw Mb8E_A" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA T4Rl4A _6_lymw" style="font-family: YACgESME5ew_0, _fb_, auto; --H97cbQ: 93.9113px; line-height: 131px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-187.823 -185.713 694.02 479.645' width='694.02' height='479.645'%3E%3Cdefs%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='159.188' y1='2.109' x2='159.188' y2='106.109'%3E%3Cstop stop-color='%230919ae' stop-opacity='1' offset='0'/%3E%3Cstop stop-color='%23ffffff' stop-opacity='1' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='-187.823' y='-185.713' width='694.02' height='479.645' fill='url(%23g)'/%3E%3C/svg%3E&quot;); background-position: 0px 13px; margin-block-start: -187.823px; --3foukQ: 187.8226px;"><span class="a_GcMg" style="font-size: 1em; font-weight: 700; font-style: normal; color: transparent; font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">ECELL</span></p></div></div></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBqMP0JCy7Bhjgbj" style="width: 236.369px; height: 255.765px; transform: translate(-17.1203px, 40.4465px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 239.132px; height: 255.765px; transform: translate(-2.76364px, -1.42109e-14px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2F95c2d319-2e17-4b2b-9586-4a1f3cff3200/watermark:F/width:747?csig=AAAAAAAAAAAAAAAAAAAAAMDD9K6jSPuS0TVEBdG6YmWo7wwgSAWY1VAWcLIk8pbh&amp;exp=1787832512&amp;osig=AAAAAAAAAAAAAAAAAAAAAPjZXylunh-OJ7LRd6N2YF67B-Y5TdrLiIth2jZLSRg8&amp;signer=media-rpc&amp;x-canva-quality=screen"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 255.765px; width: 236.369px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBkT5gKBYQkF41WL" style="width: 208.636px; height: 196.389px; transform: translate(-4.63572px, 130.971px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 196.389px; width: 208.636px; transform: scale(1);"><div class="hWv4NA" style="width: 208.636px; height: 196.389px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id16"><path d="M0,0L271.96414841453884,0L271.96414841453884,256L0,256Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id16"); width: 271.964px; height: 256px; transform: scale(0.767144, 0.767144); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'><div class="Ms_IOA"><svg class="_KMJVg" preserveaspectratio="xMidYMid slice" role="presentation" viewbox="0 0 271.964 256"><defs><lineargradient gradientunits="userSpaceOnUse" id="__id17__id18" x1="135.982" x2="135.982" y1="0" y2="256"><stop offset="0" stop-color="#222189" stop-opacity="0"></stop><stop offset="0.077" stop-color="#000000" stop-opacity="0.12"></stop><stop offset="0.154" stop-color="#000000" stop-opacity="0.3"></stop><stop offset="0.231" stop-color="#000000" stop-opacity="0.49"></stop><stop offset="0.308" stop-color="#000000" stop-opacity="0.685"></stop><stop offset="0.385" stop-color="#000000" stop-opacity="0.865"></stop><stop offset="0.462" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.538" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.615" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.692" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.769" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.846" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.923" stop-color="#000000" stop-opacity="1"></stop><stop offset="1" stop-color="#000000" stop-opacity="1"></stop></lineargradient></defs><rect fill="url(#__id17__id18)" height="256" width="271.964" x="0" y="0"></rect></svg></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBXdlpytRhmHy13Q" style="width: 62.6164px; height: 21.7282px; transform: translate(138.081px, 4.72548px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 62.6164px; height: 26.8207px; transform: translate(-7.10543e-15px, 0px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:85/quality:100/uri:ifs%3A%2F%2FM%2Fa7f8e9cc-ea3a-4b23-91d2-e860a31d63f7/watermark:F/width:199?csig=AAAAAAAAAAAAAAAAAAAAAAY-yIdEepCIKsvcoqa0sx-tIJoUD9VNwO5S3HgwAtUV&amp;exp=1787831621&amp;osig=AAAAAAAAAAAAAAAAAAAAAL__WSX_5BnIBGu1m6I5TuY3XjsCSIZXRLzbIJfoyn45&amp;signer=media-rpc&amp;x-canva-quality=thumbnail"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 21.7282px; width: 62.6164px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBV3k8N3LPKbBLzr" style="width: 50.1454px; height: 11.3663px; transform: translate(74.6094px, 9.90641px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 11.3663px; width: 50.1454px; transform: scale(1);"><div class="hWv4NA" style="width: 50.1454px; height: 11.3663px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id24"><path d="M127.99999992926216,0L1001.4079990297284,0C1035.355709926827,0 1067.9130107821736,13.48567556230054 1091.9176670894317,37.49033208493172C1115.9223236120629,61.49498839219005 1129.4079991743636,94.05228924753634 1129.4079991743636,127.99999992926216C1129.4079991743636,161.947710610988 1115.9223236120629,194.5050114663343 1091.9176670894317,218.50966798896548C1067.9130107821736,242.51432451159664 1035.355709926827,256.0000000738972 1001.4079990297284,256.0000000738972L127.99999992926216,256.0000000738972C94.05228924753634,256.0000000738972 61.49498839219005,242.51432451159664 37.49033208493172,218.50966798896548C13.48567556230054,194.5050114663343 0,161.947710610988 0,127.99999992926216C0,94.05228924753634 13.48567556230054,61.49498839219005 37.49033208493172,37.49033208493172C61.49498839219005,13.48567556230054 94.05228924753634,0 127.99999992926216,0Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id24"); background: rgb(0, 0, 0); width: 1129.41px; height: 256px; transform: scale(0.0443997, 0.0443997); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LB0fpjpDrNWNnW11" style="width: 131.525px; height: 34.2048px; transform: translate(36.2375px, 217.166px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 131.525px; height: 34.2048px;"><div style="transform: translate(0px, -2.8976px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YACgESME5ew_0, _fb_, auto; --H97cbQ: 28.976px; color: rgb(255, 255, 255); line-height: 40px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 700; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">LOVE CHAUHAN</span></p></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LB3GDRhQmv9SCnTj" style="width: 99.8672px; height: 10.7879px; transform: translate(52.0664px, 260.371px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 125.9px; height: 13.6px; transform: scale(0.793226, 0.793226); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YAFdJjTk5UU_0, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: italic; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">“ Creative Designing ”</span></p></div></div></div></div></div></div></div></div></div><div aria-label="Canvas content" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" role="region" tabindex="-1"><div aria-describedby="_r_l_-0" aria-label="Page 1" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" id="accessibility_dom-0" role="group"></div></div></div></div>
+      <div class="DPPJ_A" data-page-id="0" style="width: 379.667px; height: 603px; margin: 0px;"><div class="_14BoqA" style="width: 204px; height: 324px; transform: scale(1.86111);"><div aria-hidden="true"><div class="_mXnjA" lang="en-IN" style="width: 204px; height: 324px;"><div class="_6t4CHA"><div class="a26Xuw"><div class="fbzKiw" style="background: rgb(255, 255, 255);"></div></div></div><div style="position: absolute; top: 20.4px; left: 20.4px; width: 163.2px; height: 283.2px;"></div><div class="DF_utQ _0xkaeQ" id="LB7f241MvdYFZg15" style="width: 208.636px; height: 330.72px; transform: translate(-1.66782px, -1.33426px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 330.72px; width: 208.636px; transform: scale(1);"><div class="hWv4NA" style="width: 208.636px; height: 330.72px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id1"><path d="M0,0L256,0L256,405.80035005762016L0,405.80035005762016Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id1"); width: 256px; height: 405.8px; transform: scale(0.814983, 0.814983); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'><div class="Ms_IOA"><svg class="_KMJVg" preserveaspectratio="xMidYMid slice" role="presentation" viewbox="0 0 256 405.8"><defs><radialgradient cx="0" cy="0" fx="0" fy="0" gradientunits="userSpaceOnUse" id="__id2__id3" r="479.802"><stop offset="0" stop-color="#222189" stop-opacity="1"></stop><stop offset="1" stop-color="#000000" stop-opacity="1"></stop></radialgradient></defs><rect fill="url(#__id2__id3)" height="405.8" width="256" x="0" y="0"></rect></svg></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBMMV2931CW8T7ST" style="width: 209.303px; height: 33.8477px; transform: translate(-2.33495px, -1.33426px);"><div class="xx0k8Q" style="filter: drop-shadow(rgba(0, 0, 0, 0.3) 14.142px 14.142px 10px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 33.8477px; width: 209.303px; transform: scale(1);"><div class="hWv4NA" style="width: 209.303px; height: 33.8477px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id5"><path d="M0,0L1583.0195879702294,0L1583.0195879702294,256L0,256Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id5"); background: rgb(217, 217, 217); width: 1583.02px; height: 256px; transform: scale(0.132217, 0.132217); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBVnJFRfz8KtSwRm" style="width: 39.8421px; height: 28.8681px; transform: translate(3.30291px, 1.15553px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 77.4025px; height: 96.7964px; transform: translate(-18.7802px, -33.5646px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2Fbccc673e-5586-4986-a471-a83fd37e1e69/watermark:F/width:639?csig=AAAAAAAAAAAAAAAAAAAAAEUuZJBwAZdEPukUOl3ryH3EbKbdf5nHaii72U_AIJdc&amp;exp=1787833625&amp;osig=AAAAAAAAAAAAAAAAAAAAAF4iB96IgTZuwA8zPrPyjMzUgxlAGTYV0wBJej_v9XJI&amp;signer=media-rpc&amp;x-canva-quality=screen"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 28.8681px; width: 39.8421px; pointer-events: none; transform: scale(1);"></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBPcy1rwN3FjRkl4" style="width: 197.394px; height: 131.977px; transform: translate(3.30291px, 47.5351px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 169.038px; height: 113.018px; transform: scale(1.16775, 1.16775); transform-origin: 0px 0px;"><div style="transform: translate(0px, -9.39113px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YACgESME5ew_0, _fb_, auto; --H97cbQ: 93.9113px; color: rgb(9, 25, 174); line-height: 131px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 700; font-style: normal; color: transparent; font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">ECELL</span></p></div></div><div aria-hidden="true" class="IBvdUw"><div class="_2UyCZQ vkN2Cw Mb8E_A" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA T4Rl4A _6_lymw" style="font-family: YACgESME5ew_0, _fb_, auto; --H97cbQ: 93.9113px; line-height: 131px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-187.823 -182.71 544.683 473.245' width='544.683' height='473.245'%3E%3Cdefs%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='84.519' y1='5.112' x2='84.519' y2='102.712'%3E%3Cstop stop-color='%230919ae' stop-opacity='1' offset='0'/%3E%3Cstop stop-color='%23ffffff' stop-opacity='1' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='-187.823' y='-182.71' width='544.683' height='473.245' fill='url(%23g)'/%3E%3C/svg%3E&quot;); background-position: 0px 16px; margin-block-start: -187.823px; --3foukQ: 187.8226px;"><span class="a_GcMg" style="font-size: 1em; font-weight: 700; font-style: normal; color: transparent; font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">ECELL</span></p></div></div></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBqMP0JCy7Bhjgbj" style="width: 236.369px; height: 255.765px; transform: translate(-17.1203px, 40.4465px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 239.132px; height: 255.765px; transform: translate(-2.76364px, -1.42109e-14px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2F95c2d319-2e17-4b2b-9586-4a1f3cff3200/watermark:F/width:747?csig=AAAAAAAAAAAAAAAAAAAAAMDD9K6jSPuS0TVEBdG6YmWo7wwgSAWY1VAWcLIk8pbh&amp;exp=1787832512&amp;osig=AAAAAAAAAAAAAAAAAAAAAPjZXylunh-OJ7LRd6N2YF67B-Y5TdrLiIth2jZLSRg8&amp;signer=media-rpc&amp;x-canva-quality=screen"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 255.765px; width: 236.369px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBkT5gKBYQkF41WL" style="width: 208.636px; height: 196.389px; transform: translate(-4.63572px, 130.971px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 196.389px; width: 208.636px; transform: scale(1);"><div class="hWv4NA" style="width: 208.636px; height: 196.389px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id16"><path d="M0,0L271.96414841453884,0L271.96414841453884,256L0,256Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id16"); width: 271.964px; height: 256px; transform: scale(0.767144, 0.767144); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'><div class="Ms_IOA"><svg class="_KMJVg" preserveaspectratio="xMidYMid slice" role="presentation" viewbox="0 0 271.964 256"><defs><lineargradient gradientunits="userSpaceOnUse" id="__id17__id18" x1="135.982" x2="135.982" y1="0" y2="256"><stop offset="0" stop-color="#222189" stop-opacity="0"></stop><stop offset="0.077" stop-color="#000000" stop-opacity="0.12"></stop><stop offset="0.154" stop-color="#000000" stop-opacity="0.3"></stop><stop offset="0.231" stop-color="#000000" stop-opacity="0.49"></stop><stop offset="0.308" stop-color="#000000" stop-opacity="0.685"></stop><stop offset="0.385" stop-color="#000000" stop-opacity="0.865"></stop><stop offset="0.462" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.538" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.615" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.692" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.769" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.846" stop-color="#000000" stop-opacity="1"></stop><stop offset="0.923" stop-color="#000000" stop-opacity="1"></stop><stop offset="1" stop-color="#000000" stop-opacity="1"></stop></lineargradient></defs><rect fill="url(#__id17__id18)" height="256" width="271.964" x="0" y="0"></rect></svg></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBXdlpytRhmHy13Q" style="width: 62.6164px; height: 21.7282px; transform: translate(138.081px, 4.72548px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 62.6164px; height: 26.8207px; transform: translate(-7.10543e-15px, 0px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:64/quality:100/uri:ifs%3A%2F%2FM%2Fa7f8e9cc-ea3a-4b23-91d2-e860a31d63f7/watermark:F/width:150?csig=AAAAAAAAAAAAAAAAAAAAANvKeD6pgsj-BXVR-k6iWjW2K83PJBUueqUYQEHCxSF5&amp;exp=1787835221&amp;osig=AAAAAAAAAAAAAAAAAAAAALttso5HgaiQfLaonu9XCvQdKbJ7Vd5VQq8Yk5OxzMdA&amp;signer=media-rpc&amp;x-canva-quality=micro_thumbnail"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 21.7282px; width: 62.6164px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBV3k8N3LPKbBLzr" style="width: 50.1454px; height: 11.3663px; transform: translate(74.6094px, 9.90641px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 11.3663px; width: 50.1454px; transform: scale(1);"><div class="hWv4NA" style="width: 50.1454px; height: 11.3663px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id24"><path d="M127.99999992926216,0L1001.4079990297284,0C1035.355709926827,0 1067.9130107821736,13.48567556230054 1091.9176670894317,37.49033208493172C1115.9223236120629,61.49498839219005 1129.4079991743636,94.05228924753634 1129.4079991743636,127.99999992926216C1129.4079991743636,161.947710610988 1115.9223236120629,194.5050114663343 1091.9176670894317,218.50966798896548C1067.9130107821736,242.51432451159664 1035.355709926827,256.0000000738972 1001.4079990297284,256.0000000738972L127.99999992926216,256.0000000738972C94.05228924753634,256.0000000738972 61.49498839219005,242.51432451159664 37.49033208493172,218.50966798896548C13.48567556230054,194.5050114663343 0,161.947710610988 0,127.99999992926216C0,94.05228924753634 13.48567556230054,61.49498839219005 37.49033208493172,37.49033208493172C61.49498839219005,13.48567556230054 94.05228924753634,0 127.99999992926216,0Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id24"); background: rgb(0, 0, 0); width: 1129.41px; height: 256px; transform: scale(0.0443997, 0.0443997); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LB0fpjpDrNWNnW11" style="width: 131.525px; height: 34.2048px; transform: translate(36.2375px, 217.166px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 131.525px; height: 34.2048px;"><div style="transform: translate(0px, -2.8976px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YACgESME5ew_0, _fb_, auto; --H97cbQ: 28.976px; color: rgb(255, 255, 255); line-height: 40px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 700; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">LOVE CHAUHAN</span></p></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LB3GDRhQmv9SCnTj" style="width: 99.8672px; height: 10.7879px; transform: translate(52.0664px, 260.371px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 125.9px; height: 13.6px; transform: scale(0.793226, 0.793226); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YAFdJjTk5UU_0, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: italic; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">“ Creative Designing ”</span></p></div></div></div></div></div></div></div></div></div><div aria-label="Canvas content" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" role="region" tabindex="-1"><div aria-describedby="_r_k_-0" aria-label="Page 1" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" id="accessibility_dom-0" role="group"></div></div></div></div>
     </div>
   </div>
 
@@ -2565,7 +2635,7 @@ html, body {
       font-family: 'Inter', system-ui, sans-serif;
     ">BACK</div>
     <div class="card-wrapper">
-      <div class="DPPJ_A" data-page-id="1" style="width: 503.074px; height: 799px; margin: 0px;"><div class="_14BoqA" style="width: 204px; height: 324px; transform: scale(2.46605);"><div aria-hidden="true"><div class="_mXnjA" lang="en-IN" style="width: 204px; height: 324px;"><div class="_6t4CHA"><div class="a26Xuw"><div class="fbzKiw" style="background: rgb(255, 255, 255);"></div></div></div><div style="position: absolute; top: 20.4px; left: 20.4px; width: 163.2px; height: 283.2px;"></div><div class="DF_utQ _0xkaeQ" id="LBFd9xJGSJJdRHWQ" style="width: 208.636px; height: 330.72px; transform: translate(-1.66782px, -1.33426px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 330.72px; width: 208.636px; transform: scale(1);"><div class="hWv4NA" style="width: 208.636px; height: 330.72px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id28"><path d="M0,0L256,0L256,405.80035005762016L0,405.80035005762016Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id28"); width: 256px; height: 405.8px; transform: scale(0.814983, 0.814983); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'><div class="Ms_IOA"><svg class="_KMJVg" preserveaspectratio="xMidYMid slice" role="presentation" viewbox="0 0 256 405.8"><defs><radialgradient cx="0" cy="0" fx="0" fy="0" gradientunits="userSpaceOnUse" id="__id29__id30" r="479.802"><stop offset="0" stop-color="#222189" stop-opacity="1"></stop><stop offset="1" stop-color="#000000" stop-opacity="1"></stop></radialgradient></defs><rect fill="url(#__id29__id30)" height="405.8" width="256" x="0" y="0"></rect></svg></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBND4pVN86fQjTHf" style="width: 209.303px; height: 5px; transform: translate(-2.33495px, 27.5134px);"><div class="xx0k8Q" style="filter: drop-shadow(rgba(0, 0, 0, 0.3) 14.142px 14.142px 10px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 5px; width: 209.303px; transform: scale(1);"><div class="hWv4NA" style="width: 209.303px; height: 5px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id32"><path d="M0,0L10716.305727728777,0L10716.305727728777,256L0,256Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id32"); background: rgb(217, 217, 217); width: 10716.3px; height: 256px; transform: scale(0.0195312, 0.0195312); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LB1HrMRVKvBHbJgn" style="width: 66.0778px; height: 66.1657px; transform: translate(14.2839px, 55.4131px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 66.1657px; width: 66.0778px; transform: scale(1);"><div class="hWv4NA" style="width: 66.0778px; height: 66.1657px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id34"><path d="M0,0L256,0L256,256.34022470648387L0,256.34022470648387Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id34"); background: rgb(255, 255, 255); width: 256px; height: 256.34px; transform: scale(0.258117, 0.258117); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBSZzR6Fxdv0mVMT" style="width: 73.7703px; height: 73.7703px; transform: translate(10.4377px, 51.6108px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 73.7703px; height: 73.7703px; transform: translate(0px, 0px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:200/quality:100/uri:ifs%3A%2F%2FM%2F3dc28c4a-145b-4331-b3c8-5655f66653c4/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAMrcnfYV_I6S3QgoHUKDLnQJvncIGAGL-5XwM9-w0Kue&amp;exp=1787831554&amp;osig=AAAAAAAAAAAAAAAAAAAAAMb2XYz0HZOGzqyPANGO6E1H5MuREwbOM7AM3YYu_Owx&amp;signer=media-rpc&amp;x-canva-quality=thumbnail"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 73.7703px; width: 73.7703px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBqSh6Vn5RDvG0hq" style="width: 10.0584px; height: 10.0584px; transform: translate(94.1605px, 75.0951px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 10.0584px; height: 10.0584px; transform: translate(0px, 0px) rotate(0deg);"><svg height="24.804521796749444px" original_string_length="1091" preserveaspectratio="xMidYMid meet" style="fill: rgb(255, 255, 255);" version="1.0" viewbox="0.0 0.0 4232.5 4232.5" width="24.804521796749444px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomandpan="magnify"><g id="__id0_syk2gcbe3b"><path d="M 4180.152344 3107.082031 C 4211.050781 3189.648438 4229.074219 3278.332031 4231.800781 3371.101562 C 4232.472656 3379.933594 4232.472656 3388.769531 4232.472656 3397.941406 C 4232.472656 3858.710938 3858.691406 4232.480469 3397.925781 4232.480469 C 1521.257812 4232.480469 0 2711.222656 0 834.53125 C 0 373.789062 373.773438 0.00390625 834.535156 0.00390625 C 843.710938 0.00390625 852.546875 0.00390625 861.382812 0.679688 C 954.140625 3.40625 1043.167969 21.425781 1125.730469 52.328125 L 1439.027344 1408.796875 C 1439.027344 1409.472656 1438.6875 1409.808594 1438.007812 1410.148438 L 863.410156 1668.390625 L 861.714844 1669.074219 C 1125.398438 2472 1760.476562 3107.082031 2563.40625 3370.773438 L 2564.085938 3369.058594 L 2822.671875 2794.132812 L 4180.152344 3107.082031" style="fill: inherit;"></path></g></svg></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 10.0584px; width: 10.0584px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBQ4wjK3Wm596GSC" style="width: 7.83954px; height: 13.3629px; transform: translate(94.1605px, 92.9577px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 7.83954px; height: 13.3629px; transform: translate(0px, 1.77636e-15px) rotate(0deg);"><img alt="Blood Drop Outline Flat Geometric Icon" class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:50/quality:100/uri:ifs%3A%2F%2FM%2F4f25a677-7798-46e0-b27e-c514f2283cb4/watermark:F/width:29?csig=AAAAAAAAAAAAAAAAAAAAAHydKymqBoyLGFzXdmIlMLAFrZJTJGi5Um6gYBYMoxrM&amp;exp=1787831965&amp;osig=AAAAAAAAAAAAAAAAAAAAALxXc0EuFCm1dbl2tEzNuFgNwhHGOTJwOAfz1geoToh6&amp;signer=media-rpc&amp;x-canva-quality=pico_thumbnail"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 13.3629px; width: 7.83954px; pointer-events: none; transform: scale(1);"></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBTC8Gsfg9NN8J9m" style="width: 189.604px; height: 134.085px; transform: translate(4.43772px, 154.381px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 290.731px; height: 205.6px; transform: scale(0.652165, 0.652165); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA GEC0sA XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">This card certifies that the holder is a registered<br/>Member/Head of E-Cell @ I.T.S ENGINEERIGN<br/>COLLEGE GREATER NOIDA.</span><span class="a_GcMg zYq_BQ" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;"> </span></p><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div><p class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">The holder must produce this card upon request<br/>by campus security or library staff. Misuse of this<br/>card will result in disciplinary action.</span></p><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div><p class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">If Found: Please drop this card into a mailbox or<br/>return it to the Student Services Office at<br/>NewGen ITSEC, Knowledge Park III Greater Noida.</span></p><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LB5wSgy293bJBzJt" style="width: 54.5981px; height: 7.40398px; transform: translate(20.0238px, 125.381px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 100.289px; height: 13.6px; transform: scale(0.54441, 0.54441); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">VERIFICATION QR</span></p></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBdB3zV0qKMLfWK8" style="width: 68.9821px; height: 10.3806px; transform: translate(108.215px, 74.7729px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 90.376px; height: 13.6px; transform: scale(0.763279, 0.763279); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA GEC0sA XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">8383090874</span></p></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBS3HNw02Mj8wCfN" style="width: 68.9821px; height: 10.3806px; transform: translate(108.215px, 94.4489px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 90.376px; height: 13.6px; transform: scale(0.763279, 0.763279); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA GEC0sA XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">B +ve</span></p></div></div></div></div></div></div></div></div></div><div aria-label="Canvas content" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" role="region" tabindex="-1"><div aria-describedby="_r_m_-0" aria-label="Page 2" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" id="accessibility_dom-11" role="group"></div></div></div></div>
+      <div class="DPPJ_A" data-page-id="1" style="width: 379.667px; height: 603px; margin: 0px;"><div class="_14BoqA" style="width: 204px; height: 324px; transform: scale(1.86111);"><div aria-hidden="true"><div class="_mXnjA" lang="en-IN" style="width: 204px; height: 324px;"><div class="_6t4CHA"><div class="a26Xuw"><div class="fbzKiw" style="background: rgb(255, 255, 255);"></div></div></div><div style="position: absolute; top: 20.4px; left: 20.4px; width: 163.2px; height: 283.2px;"></div><div class="DF_utQ _0xkaeQ" id="LBFd9xJGSJJdRHWQ" style="width: 208.636px; height: 330.72px; transform: translate(-1.66782px, -1.33426px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 330.72px; width: 208.636px; transform: scale(1);"><div class="hWv4NA" style="width: 208.636px; height: 330.72px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id28"><path d="M0,0L256,0L256,405.80035005762016L0,405.80035005762016Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id28"); width: 256px; height: 405.8px; transform: scale(0.814983, 0.814983); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'><div class="Ms_IOA"><svg class="_KMJVg" preserveaspectratio="xMidYMid slice" role="presentation" viewbox="0 0 256 405.8"><defs><radialgradient cx="0" cy="0" fx="0" fy="0" gradientunits="userSpaceOnUse" id="__id29__id30" r="479.802"><stop offset="0" stop-color="#222189" stop-opacity="1"></stop><stop offset="1" stop-color="#000000" stop-opacity="1"></stop></radialgradient></defs><rect fill="url(#__id29__id30)" height="405.8" width="256" x="0" y="0"></rect></svg></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBND4pVN86fQjTHf" style="width: 209.303px; height: 5px; transform: translate(-2.33495px, 27.5134px);"><div class="xx0k8Q" style="filter: drop-shadow(rgba(0, 0, 0, 0.3) 14.142px 14.142px 10px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 5px; width: 209.303px; transform: scale(1);"><div class="hWv4NA" style="width: 209.303px; height: 5px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id32"><path d="M0,0L10716.305727728777,0L10716.305727728777,256L0,256Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id32"); background: rgb(217, 217, 217); width: 10716.3px; height: 256px; transform: scale(0.0195312, 0.0195312); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LB1HrMRVKvBHbJgn" style="width: 66.0778px; height: 66.1657px; transform: translate(14.2839px, 55.4131px);"><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 66.1657px; width: 66.0778px; transform: scale(1);"><div class="hWv4NA" style="width: 66.0778px; height: 66.1657px; left: 0px; top: 0px;"><svg class="_7KaXww"><defs><clippath id="__id34"><path d="M0,0L256,0L256,256.34022470648387L0,256.34022470648387Z"></path></clippath></defs></svg><div class="bFnJ2A _7vS1Yw _682gpw" style='clip-path: url("#__id34"); background: rgb(255, 255, 255); width: 256px; height: 256.34px; transform: scale(0.258117, 0.258117); transform-origin: 0px 0px; touch-action: pan-x pan-y pinch-zoom;'></div></div></div></div><div class="DF_utQ _0xkaeQ" id="LBSZzR6Fxdv0mVMT" style="width: 73.7703px; height: 73.7703px; transform: translate(10.4377px, 51.6108px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 73.7703px; height: 73.7703px; transform: translate(0px, 0px) rotate(0deg);"><img class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:200/quality:100/uri:ifs%3A%2F%2FM%2F3dc28c4a-145b-4331-b3c8-5655f66653c4/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAKgo_rm4xXYkKqMOe0TE0lhs6gUKJg9HhXx1XgpsGVtq&amp;exp=1787835154&amp;osig=AAAAAAAAAAAAAAAAAAAAANqKhF_0kqo71lLn2SePjvX68SdWvyTzOuSMF-12yQA5&amp;signer=media-rpc&amp;x-canva-quality=thumbnail"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 73.7703px; width: 73.7703px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBqSh6Vn5RDvG0hq" style="width: 10.0584px; height: 10.0584px; transform: translate(94.1605px, 75.0951px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 10.0584px; height: 10.0584px; transform: translate(0px, 0px) rotate(0deg);"><svg height="23.39976008047546px" original_string_length="1091" preserveaspectratio="xMidYMid meet" style="fill: rgb(255, 255, 255);" version="1.0" viewbox="0.0 0.0 4232.5 4232.5" width="23.39976008047546px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomandpan="magnify"><g id="__id0_s6hppfchfg"><path d="M 4180.152344 3107.082031 C 4211.050781 3189.648438 4229.074219 3278.332031 4231.800781 3371.101562 C 4232.472656 3379.933594 4232.472656 3388.769531 4232.472656 3397.941406 C 4232.472656 3858.710938 3858.691406 4232.480469 3397.925781 4232.480469 C 1521.257812 4232.480469 0 2711.222656 0 834.53125 C 0 373.789062 373.773438 0.00390625 834.535156 0.00390625 C 843.710938 0.00390625 852.546875 0.00390625 861.382812 0.679688 C 954.140625 3.40625 1043.167969 21.425781 1125.730469 52.328125 L 1439.027344 1408.796875 C 1439.027344 1409.472656 1438.6875 1409.808594 1438.007812 1410.148438 L 863.410156 1668.390625 L 861.714844 1669.074219 C 1125.398438 2472 1760.476562 3107.082031 2563.40625 3370.773438 L 2564.085938 3369.058594 L 2822.671875 2794.132812 L 4180.152344 3107.082031" style="fill: inherit;"></path></g></svg></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 10.0584px; width: 10.0584px; pointer-events: none; transform: scale(1);"></div></div></div><div class="DF_utQ _0xkaeQ" id="LBQ4wjK3Wm596GSC" style="width: 7.83954px; height: 13.3629px; transform: translate(94.1605px, 92.9577px);"><div class="Zp7NQw"><div class="a26Xuw"><div class="PcHy7w"><div class="uk_25A Ty61NA"><div class="H5qArQ"><div class="Izwocg" style="width: 7.83954px; height: 13.3629px; transform: translate(0px, 1.77636e-15px) rotate(0deg);"><img alt="Blood Drop Outline Flat Geometric Icon" class="_7_i_XA" crossorigin="anonymous" draggable="false" src="https://media.canva.com/v2/image-resize/format:PNG/height:50/quality:100/uri:ifs%3A%2F%2FM%2F4f25a677-7798-46e0-b27e-c514f2283cb4/watermark:F/width:29?csig=AAAAAAAAAAAAAAAAAAAAAAlqWkWDzSiSwLQU37SyNRKr3ddin94UJ5zQS6vHKgGv&amp;exp=1787835565&amp;osig=AAAAAAAAAAAAAAAAAAAAAE01IuvxylbQM8MEH47T6UWal7cwF1u9lU4c9O1TEqDp&amp;signer=media-rpc&amp;x-canva-quality=pico_thumbnail"/></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; transform-origin: 0px 0px; height: 13.3629px; width: 7.83954px; pointer-events: none; transform: scale(1);"></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBTC8Gsfg9NN8J9m" style="width: 189.604px; height: 134.085px; transform: translate(4.43772px, 154.381px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 290.731px; height: 205.6px; transform: scale(0.652165, 0.652165); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA GEC0sA XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">This card certifies that the holder is a registered<br/>Member/Head of E-Cell @ I.T.S ENGINEERIGN<br/>COLLEGE GREATER NOIDA.</span><span class="a_GcMg zYq_BQ" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;"> </span></p><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div><p class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">The holder must produce this card upon request<br/>by campus security or library staff. Misuse of this<br/>card will result in disciplinary action.</span></p><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div><p class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">If Found: Please drop this card into a mailbox or<br/>return it to the Student Services Office at<br/>NewGen ITSEC, Knowledge Park III Greater Noida.</span></p><div class="_28USrA GEC0sA XN6uKA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><br/></div></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LB5wSgy293bJBzJt" style="width: 54.5981px; height: 7.40398px; transform: translate(20.0238px, 125.381px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 100.289px; height: 13.6px; transform: scale(0.54441, 0.54441); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA AfeL7g XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">VERIFICATION QR</span></p></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBdB3zV0qKMLfWK8" style="width: 68.9821px; height: 10.3806px; transform: translate(108.215px, 74.7729px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 90.376px; height: 13.6px; transform: scale(0.763279, 0.763279); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA GEC0sA XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">8383090874</span></p></div></div></div></div></div></div></div><div><div class="DF_utQ _0xkaeQ" id="LBS3HNw02Mj8wCfN" style="width: 68.9821px; height: 10.3806px; transform: translate(108.215px, 94.4489px);"><div class="aF9o6Q _0yZ6Qg" style="writing-mode: horizontal-tb; width: 90.376px; height: 13.6px; transform: scale(0.763279, 0.763279); transform-origin: 0px 0px;"><div style="transform: translate(0px, -1.2px);"><div class="E8yZTA"><div><div class="_2UyCZQ vkN2Cw Mb8E_A e1_zQg" lang="en-IN" translate="no"><p class="_28USrA GEC0sA XN6uKA _4N4NA" style="font-family: YAFdJjbTu24_1, _fb_, auto; --H97cbQ: 12px; color: rgb(255, 255, 255); line-height: 16px; letter-spacing: 0em; --gixK-A: 0; text-transform: none; --kJ5CrQ: 0; --zPlnxA: none; list-style-type: none;"><span class="a_GcMg" style="font-size: 1em; font-weight: 400; font-style: normal; color: rgb(255, 255, 255); font-kerning: none; text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial;">B +ve</span></p></div></div></div></div></div></div></div></div></div><div aria-label="Canvas content" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" role="region" tabindex="-1"><div aria-describedby="_r_l_-0" aria-label="Page 2" class="xkdpibf x1717udv x9r1u3d xng3xce xc342km xb3r6kr x1qvwoe0 x10l6tqk xuxw1ft xjm9jq1 x1i1rx1s" id="accessibility_dom-11" role="group"></div></div></div></div>
     </div>
   </div>
 

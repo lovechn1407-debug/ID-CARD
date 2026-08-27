@@ -82,18 +82,22 @@ standalone_css = """
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background: radial-gradient(ellipse at 20% 50%, #1a1040 0%, #070b1a 60%, #000000 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: 'Inter', sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  height: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  /* Kill Canva's app-level overflow:hidden */
+  background: radial-gradient(ellipse at 20% 50%, #1a1040 0%, #070b1a 60%, #000000 100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  font-family: 'Inter', sans-serif !important;
+  user-select: auto !important;
+  -webkit-user-select: auto !important;
 }
 
 /* ===== CARD VIEWER WRAPPER ===== */
@@ -125,27 +129,16 @@ html, body {
     0 0 100px rgba(100,80,255,0.25);
 }
 
-/* ===== FIX CANVA CONTAINER OVERFLOWS ===== */
-/* Remove broken SVG clip-paths that clip out the card background */
-.bFnJ2A {
-  clip-path: none !important;
-  -webkit-clip-path: none !important;
-}
-
-/* All absolutely-positioned card elements must be visible */
-.DF_utQ {
-  position: absolute !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-/* Card page container */
+/* ===== FIX 1: CARD PAGE CONTAINER ===== */
+/* DPPJ_A has explicit pixel width/height in inline style — just ensure it's visible */
 .DPPJ_A {
   position: relative !important;
   overflow: hidden !important;
+  flex-shrink: 0 !important;
 }
 
-/* Inner scaled canvas */
+/* ===== FIX 2: INNER SCALED CANVAS (_14BoqA) ===== */
+/* This element has transform:scale(2.46605) in inline style — it MUST overflow to fill card */
 ._14BoqA {
   position: relative !important;
   transform-origin: 0 0 !important;
@@ -154,52 +147,41 @@ html, body {
 
 ._mXnjA {
   position: relative !important;
+  overflow: visible !important;
 }
 
-/* Background fill layer */
+/* ===== FIX 3: ALL CARD ELEMENTS VISIBLE ===== */
+/* Canva uses position:absolute for all card content */
+.DF_utQ {
+  cursor: auto !important;
+  outline: none !important;
+  position: absolute !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ===== FIX 4: BACKGROUND FILL LAYER ===== */
 .fbzKiw {
   position: absolute !important;
   inset: 0 !important;
 }
 
-/* Image containers */
-.a26Xuw {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.PcHy7w, .uk_25A, .Ty61NA {
-  width: 100% !important;
-  height: 100% !important;
+/* ===== FIX 5: GRADIENT SVG BACKGROUND LAYERS ===== */
+/* These are the radial/linear gradient SVG backgrounds.
+   bFnJ2A uses clip-path:url(#__idN) — these local SVG defs exist in the SAME DPPJ_A container,
+   so they DO work. BUT the issue is the element is sized at e.g. 256x405 then scaled down 0.81x.
+   The clip-path clips it to the card boundary shape — we MUST keep clip-path for the background shapes.
+   We only need to ensure the PARENT (.hWv4NA) is visible and not hidden. */
+.hWv4NA {
   position: relative !important;
-}
-
-.H5qArQ {
-  width: 100% !important;
-  height: 100% !important;
-  position: relative !important;
-}
-
-.Izwocg {
-  position: absolute !important;
-  overflow: hidden !important;
-}
-
-._7_i_XA {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-}
-
-/* SVG canvas layers */
-._KMJVg, ._7KaXww {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
   overflow: visible !important;
+}
+
+/* bFnJ2A: Keep clip-path ON (it references local SVG defs in the same DOM) */
+/* But fix: make it visible and positioned correctly */
+.bFnJ2A {
+  position: relative !important;
+  /* clip-path is set via inline style — leave it alone, it uses local SVG defs */
 }
 
 .Ms_IOA {
@@ -208,7 +190,70 @@ html, body {
   position: relative !important;
 }
 
-/* Text rendering */
+/* ===== FIX 6: SVG ELEMENTS ===== */
+._KMJVg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: visible !important;
+}
+._7KaXww {
+  /* The SVG clip-path def holder - must exist but can be invisible */
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: visible !important;
+}
+
+/* ===== FIX 7: IMAGE ELEMENTS ===== */
+.Zp7NQw {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.a26Xuw {
+  width: 100% !important;
+  height: 100% !important;
+}
+.PcHy7w {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+.uk_25A.Ty61NA {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.H5qArQ {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.Izwocg {
+  position: absolute !important;
+  overflow: hidden !important;
+}
+._7_i_XA {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ===== FIX 8: SHAPE ELEMENTS ===== */
+.xx0k8Q {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+/* ===== FIX 9: TEXT ELEMENTS ===== */
+/* aF9o6Q is the text element — overflow: visible is critical for ECELL big text */
 .aF9o6Q {
   position: relative !important;
   overflow: visible !important;
@@ -218,22 +263,49 @@ html, body {
   position: relative !important;
 }
 
+/* ECELL gradient text: .T4Rl4A uses background-clip:text
+   The _28USrA element has inline background-image (the gradient SVG data URI)
+   and needs background-clip:text to show through the transparent text.
+   CRITICAL: font-size is set via --H97cbQ CSS variable */
 ._28USrA {
   margin: 0 !important;
+  font-size: var(--H97cbQ, inherit) !important;
 }
 
-/* Drop-shadow wrapper */
-.xx0k8Q {
+/* .IBvdUw is the aria-hidden duplicate layer for gradient text rendering */
+.IBvdUw {
   position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none !important;
 }
 
-/* Shape containers */
-.hWv4NA {
+/* Background-clip text for gradient ECELL lettering */
+.T4Rl4A {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  background-repeat: no-repeat !important;
+}
+
+/* e1_zQg is the editable text layer (with color:transparent for gradient effect)
+   We need this to be visible so gradient text shows */
+.e1_zQg {
+  visibility: visible !important;
+}
+
+/* a_GcMg: span inside text — font-size: 1em means it takes --H97cbQ from parent */
+.a_GcMg {
   position: relative !important;
+}
+
+/* ===== FIX 10: Scrollbar and pointer removal ===== */
+.iH_BFQ {
   overflow: visible !important;
+}
+
+/* Hide Canva toolbar/UI chrome that got extracted but isn't card content */
+.hXAFLQ, .F8qupg, .tDWb8g, ._QR9_A, .TaAZbw, .Yygc6A, .xkdpibf {
+  display: none !important;
 }
 """
 
