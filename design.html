@@ -1700,7 +1700,19 @@ html, body {
   padding: 0 !important;
   overflow-y: auto !important;
   overflow-x: hidden !important;
-  background: #0f172a !important;
+  background: #090d16 !important;
+}
+
+/* Remove broken SVG clip-paths that cause black screen */
+.bFnJ2A, [style*="clip-path"] {
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+}
+
+/* Ensure all page layers and text elements are visible */
+.DF_utQ, ._14BoqA, .DPPJ_A, .Ms_IOA, .Zp7NQw, .a26Xuw, .PcHy7w, .uk_25A, .H5qArQ, .Izwocg {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 main._7Z28OQ, ._7Z28OQ, .NmadZQ, .h0_i9w, .WVSfHg {
@@ -1710,7 +1722,7 @@ main._7Z28OQ, ._7Z28OQ, .NmadZQ, .h0_i9w, .WVSfHg {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   background: transparent !important;
 }
 
@@ -1719,21 +1731,17 @@ main._7Z28OQ, ._7Z28OQ, .NmadZQ, .h0_i9w, .WVSfHg {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 30px 10px !important;
+  padding: 40px 10px !important;
   width: 100% !important;
 }
 
 .DPPJ_A {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
-  border-radius: 12px !important;
-  margin: 20px auto !important;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8) !important;
+  border-radius: 16px !important;
+  margin: 30px auto !important;
   position: relative !important;
   overflow: hidden !important;
-}
-
-.DF_utQ {
-  opacity: 1 !important;
-  visibility: visible !important;
+  background: #0a0d1d !important;
 }
 </style>
 </head>
